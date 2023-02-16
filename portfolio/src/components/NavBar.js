@@ -6,28 +6,22 @@ export default function NavBar({ currentPage, handlePageChange }) {
     return (
         <nav>
             <a
-                href="about"
+                href="#about"
                 onClick={() => handlePageChange('AboutMe')}
             >
                 About Me
             </a>
             <a
-                href="projects"
+                href="#projects"
                 onClick={() => handlePageChange('Projects')}
             >
                 Portfolio
             </a>
             <a
-                href="resume"
-                onClick={() => handlePageChange('Resume')}
+                href="#contact/resume"
+                onClick={() => handlePageChange('ContactResume')}
             >
-                Resume
-            </a>
-            <a
-                href="contact"
-                onClick={() => handlePageChange('ContactMe')}
-            >
-                Contact
+                Contact/Resume
             </a>
         </nav>
     );
