@@ -4,6 +4,8 @@ import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import ContactResume from './pages/ContactResume'
 
+import Container from '@mui/material/Container';
+
 export default function Portfolio() {
     const [currentPage, setCurrentPage] = useState('AboutMe');
 
@@ -20,9 +22,9 @@ export default function Portfolio() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div>
+        <Container fixed>
             <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
-        </div>
+        </Container>
     )
 }
