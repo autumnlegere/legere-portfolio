@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/legere-portfolio/static/css/main.073c9b0a.css",
+    "main.js": "/legere-portfolio/static/js/main.63b3306d.js",
+    "static/media/autumnprofile.jpg": "/legere-portfolio/static/media/autumnprofile.096fcdfc8c4037b2e793.jpg",
+    "static/media/familyprofile.jpg": "/legere-portfolio/static/media/familyprofile.a6f26a4ed16152fd08d4.jpg",
+    "static/media/ResumeAutumnLegere.pdf": "/legere-portfolio/static/media/ResumeAutumnLegere.9e709a7f110d83a4c7cf.pdf",
+    "index.html": "/legere-portfolio/index.html",
+    "main.073c9b0a.css.map": "/legere-portfolio/static/css/main.073c9b0a.css.map",
+    "main.63b3306d.js.map": "/legere-portfolio/static/js/main.63b3306d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.63b3306d.js"
+  ]
+}
