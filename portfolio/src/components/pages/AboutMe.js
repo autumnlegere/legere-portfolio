@@ -1,12 +1,12 @@
 import React from "react";
-import familyprofile from '../../images/familyprofile.jpg'
-import autumnprofile from '../../images/autumnprofile.jpg'
+// import familyprofile from '../../images/familyprofile.jpg'
+// import autumnprofile from '../../images/autumnprofile.jpg'
 
 export default function AboutMe() {
     return (
         <div>
             <h1>About Me</h1>
-            <img alt="myself, my husband, and my son at a bowling alley" src={familyprofile} width="300"/>
+            {/* <img alt="myself, my husband, and my son at a bowling alley" src={familyprofile} width="300"/> */}
             <p>
                 Welcome to my Portfolio! My name is Autumn Legere, I am based out of Orem, UT, and for the past 3 years I have been a stay-at-home mom.
                 I recently made the decision to branch out and make a place for myself in the world of web development. It has been an absolutely terrifying
@@ -19,7 +19,7 @@ export default function AboutMe() {
                 goals by giving them a powerful online platform. I look forward to the challenges and experiences that lie ahead, and can't wait to 
                 get started in the real world!
             </p>
-            <img alt="me drinking italian soda in a restaurant" src={autumnprofile} width="300"/>
+            {/* <img alt="me drinking italian soda in a restaurant" src={autumnprofile} width="300"/> */}
         </div>
         
     );
