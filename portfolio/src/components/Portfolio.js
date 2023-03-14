@@ -3,7 +3,6 @@ import NavBar from './NavBar';
 import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import ContactResume from './pages/ContactResume'
-
 import Container from '@mui/material/Container';
 
 export default function Portfolio() {

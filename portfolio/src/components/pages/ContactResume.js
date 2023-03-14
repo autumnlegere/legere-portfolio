@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../pdf/ResumeAutumnLegere.pdf";
+// import resume from "../../pdf/ResumeAutumnLegere.pdf";
 export default function ContactMe() {
   return (
     <div>
@@ -11,36 +11,26 @@ export default function ContactMe() {
         </p>
       </section>
 
-      <a href={resume} download>DOWNLOAD RESUME HERE</a>
       <section class="contactlinks">
-        <a
-          href="https://github.com/autumnlegere/PortfolioAndBeyond.git"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github
-        </a>
-        <a
-          href="mailto: autumnlegere@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          autumnlegere@gmail.com
-        </a>
-        <a
-          href="https://www.linkedin.com/in/autumn-legere"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
+        <p>
+          <a
+            href="mailto: autumnlegere@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            autumnlegere@gmail.com
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/autumn-legere"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </p>
       </section>
-      <form>
-        <input placeholder="Name"></input>
-        <input placeholder="Email"></input>
-        <input placeholder="Message"></input>
-        <button>Submit</button>
-      </form>
     </div>
   );
 }

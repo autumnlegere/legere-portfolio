@@ -49,7 +49,7 @@ export default function NavBar({ currentPage, handlePageChange }) {
               href="#about"
               onClick={() => handlePageChange("AboutMe")}
             >
-              About Me
+              About
             </Button>
             <Button
               sx={{ color: "#fff" }}
@@ -65,7 +65,7 @@ export default function NavBar({ currentPage, handlePageChange }) {
               href="#contact/resume"
               onClick={() => handlePageChange("ContactResume")}
             >
-              Contact/Resume
+              Contact
             </Button>
           </Box>
         </Toolbar>
