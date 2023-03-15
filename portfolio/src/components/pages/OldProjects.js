@@ -169,31 +169,7 @@ export default function Projects() {
         </Button>
       </Grid>
     </div>
+
+<a target="_blank" href="https://icons8.com/icon/115635/resume">Resume</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   );
 }
-
-<p>
-In addition to the completed projects that I have chosen to include in
-this portfolio, I have many more projects that are either
-works-in-progress or back-end only on my GitHub account which is linked
-below. Most of these projects were completed as part of the bootcamp
-curriculum and each one uses a variety of platforms.
-</p>
-<a
-href="https://github.com/autumnlegere"
-target="_blank"
-rel="noopener noreferrer"
->
-github.com/autumnlegere
-</a>
-<p>
-Finally, I have included a downloadable copy of my resume for your
-viewing.
-</p>
-<a href={resume} download>
-Downloadable Resume
-</a>
-<p>
-Thank you for taking the time to view my portfolio and consider me for
-contract or employment!
-</p>

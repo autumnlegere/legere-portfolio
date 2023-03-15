@@ -1,7 +1,6 @@
 import React from "react";
-import resume from "../../pdf/resume.pdf";
 import autumnPhoto from "../../images/autumnprofile.jpg";
-import familyPhoto from "../../images/familyprofile.jpg"
+import familyPhoto from "../../images/familyprofile.jpg";
 import {
   Box,
   Card,
@@ -15,11 +14,20 @@ import {
 export default function AboutMe() {
   return (
     <div>
-      <Box sx={{ mt: 15 }}>
-        <h1>About Me</h1>
-      </Box>
+      <Grid
+        container
+        justifyContent="center"
+        alignItems="center"
+        direction="column"
+      >
+        <Grid item xs={12}>
+          <Box sx={{ mt: 15, mb: 5 }} fontSize="30">
+            <Typography variant="h2">About Me</Typography>
+          </Box>
+        </Grid>
+      </Grid>
       <Grid container spacing={4} justifyContent="center">
-      <Grid item xs={10}>
+        <Grid item xs={10}>
           <Card>
             <CardContent>
               <Typography variant="body2" sx={{ fontSize: 16 }}>
@@ -51,19 +59,13 @@ export default function AboutMe() {
         </Grid>
         <Grid item xs={12} sm={4}>
           <Card>
-            <CardMedia
-              component="img"
-              image={autumnPhoto}
-            ></CardMedia>
+            <CardMedia component="img" image={autumnPhoto}></CardMedia>
           </Card>
         </Grid>
-        
+
         <Grid item xs={12} sm={5}>
           <Card>
-            <CardMedia
-              component="img"
-              image={familyPhoto}
-            ></CardMedia>
+            <CardMedia component="img" image={familyPhoto}></CardMedia>
           </Card>
         </Grid>
       </Grid>
