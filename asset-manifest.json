@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/legere-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/legere-portfolio/static/js/main.63b3306d.js",
-    "static/media/autumnprofile.jpg": "/legere-portfolio/static/media/autumnprofile.096fcdfc8c4037b2e793.jpg",
+    "main.js": "/legere-portfolio/static/js/main.abef2c27.js",
     "static/media/familyprofile.jpg": "/legere-portfolio/static/media/familyprofile.a6f26a4ed16152fd08d4.jpg",
-    "static/media/ResumeAutumnLegere.pdf": "/legere-portfolio/static/media/ResumeAutumnLegere.9e709a7f110d83a4c7cf.pdf",
+    "static/media/autumnprofile.jpg": "/legere-portfolio/static/media/autumnprofile.196151e403b281dbbff6.jpg",
+    "static/media/resume.pdf": "/legere-portfolio/static/media/resume.4a741a6b313ca8688860.pdf",
     "index.html": "/legere-portfolio/index.html",
     "main.073c9b0a.css.map": "/legere-portfolio/static/css/main.073c9b0a.css.map",
-    "main.63b3306d.js.map": "/legere-portfolio/static/js/main.63b3306d.js.map"
+    "main.abef2c27.js.map": "/legere-portfolio/static/js/main.abef2c27.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.63b3306d.js"
+    "static/js/main.abef2c27.js"
   ]
 }
