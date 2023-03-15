@@ -1,9 +1,9 @@
 import React from "react";
 import resume from "../../pdf/resume.pdf";
-import gmailIcon from "../../images/gmailIcon"
-// import resumeIcon from "../../images/resumeIcon"
-// import linkedInIcon from "../../images/linkedInIcon"
-// import githubIcon from "../../images/githubIcon"
+import gmailIcon from "../../images/gmailIcon.png";
+import resumeIcon from "../../images/resumeIcon.png";
+import linkedInIcon from "../../images/linkedInIcon.png";
+import githubIcon from "../../images/githubIcon.png";
 
 import {
   Box,
@@ -13,17 +13,30 @@ import {
   CardMedia,
   Grid,
   Typography,
+  Tooltip,
 } from "@mui/material";
 
 const cardStyle = {
-  // backgroundColor: 'blue',
-  minWidth: 200,
+  width: 100,
   "&:hover, &:focus-within": {
     bgcolor: "grey",
   },
   margin: "auto",
 };
 
+const cardStyleLinkedIn = {
+  width: 100,
+  height: 100,
+  "&:hover, &:focus-within": {
+    bgcolor: "grey",
+  },
+  margin: "auto",
+};
+
+const cardStyleInfo = {
+  minWidth: 200,
+  margin: "auto",
+};
 
 export default function ContactMe() {
   return (
@@ -35,165 +48,102 @@ export default function ContactMe() {
         direction="column"
       >
         <Grid item xs={12}>
-          <Box sx={{ mt: 15, mb: 5 }} fontSize='30'>
+          <Box sx={{ mt: 15, mb: 7 }} fontSize="30">
             <Typography variant="h2">Contact Information</Typography>
+            <Box>
+              <Typography></Typography>
+            </Box>
           </Box>
         </Grid>
       </Grid>
       <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={6} sm={2}>
           <Card sx={cardStyle}>
             <CardActionArea
-              href="https://autumnlegere.github.io/Weather-OpenWeatherAPI/"
+              href="mailto: autumnlegere@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <Tooltip title="Gmail" placement="top">
+                <CardMedia
+                  component="img"
+                  image={gmailIcon}
+                  alt="link to gmail"
+                ></CardMedia>
+              </Tooltip>
+            </CardActionArea>
+          </Card>
+        </Grid>
+        <Grid item xs={6} sm={2}>
+          <Card sx={cardStyleLinkedIn}>
+            <CardActionArea
+              href="https://www.linkedin.com/in/autumn-legere/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Tooltip title="LinkedIn" placement="top">
               <CardMedia
-              component="img"
-              height="200"
-              image={"/static/images/cards/paella.jpg"}
-              alt="Paella dish"
+                component="img"
+                image={linkedInIcon}
+                alt="link to LinkedIn"
               ></CardMedia>
+              </Tooltip>
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={6} sm={2}>
           <Card sx={cardStyle}>
             <CardActionArea
-              href="https://autumnlegere.github.io/DailyDictionary/"
+              href="https://github.com/autumnlegere"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  Daily Dictionary
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  API's
-                  <br></br>
-                  Web page that accesses this api to display weather data for
-                  any city in the world.
-                </Typography>
-              </CardContent>
+              <Tooltip title="GitHub" placement="top">
+              <CardMedia
+                component="img"
+                image={githubIcon}
+                alt="link to GitHub"
+              ></CardMedia>
+              </Tooltip>
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={6} sm={2}>
           <Card sx={cardStyle}>
             <CardActionArea
-              href="https://sleepy-temple-31862.herokuapp.com/"
+              href={resume}
+              download
               target="_blank"
               rel="noopener noreferrer"
             >
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  Forum for Life
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Simple Social Media Site
-                  <br></br>
-                  Web page that accesses this api to display weather data for
-                  any city in the world.
-                </Typography>
-              </CardContent>
+              <Tooltip title="Download Resume" placement="top">
+              <CardMedia
+                component="img"
+                image={resumeIcon}
+                alt="download resume"
+              ></CardMedia>
+              </Tooltip>
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Card sx={cardStyle}>
-            <CardActionArea
-              href="https://autumnlegere.github.io/DailyPlanner-jQuery-JS/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  Dialy Planner
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  OpenWeatherApi
-                  <br></br>
-                  Web page that accesses this api to display weather data for
-                  any city in the world.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Card sx={cardStyle}>
-            <CardActionArea
-              href="https://polar-sierra-99541.herokuapp.com/home"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  Let Me Ask You
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  OpenWeatherApi
-                  <br></br>
-                  Web page that accesses this api to display weather data for
-                  any city in the world.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
+        <Grid item xs={12} sm={8}>
+          <Card sx={cardStyleInfo}>
+            <CardContent>
+              <Typography variant="h7">
+              In addition to the completed projects that I have chosen to include in
+        this portfolio, I have many more projects that are either
+        works-in-progress or back-end only on my GitHub account which is linked
+        below. Most of these projects were completed as part of the bootcamp
+        curriculum and each one uses a variety of platforms. Please feel free to
+        reach out to me on any of the following platforms.
+        <br />I look forward to hearing from you!         Finally, I have included a downloadable copy of my resume for your
+        viewing.         Thank you for taking the time to view my portfolio and consider me for
+        contract or employment!
+              </Typography>
+            </CardContent>
           </Card>
         </Grid>
       </Grid>
-      <section>
-        <p>
-          Please feel free to reach out to me on any of the following platforms.
-          <br />I look forward to hearing from you!
-        </p>
-      </section>
-
-      <section class="contactlinks">
-        <p>
-          <a
-            href="mailto: autumnlegere@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            autumnlegere@gmail.com
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/autumn-legere"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </p>
-        <p>
-          In addition to the completed projects that I have chosen to include in
-          this portfolio, I have many more projects that are either
-          works-in-progress or back-end only on my GitHub account which is
-          linked below. Most of these projects were completed as part of the
-          bootcamp curriculum and each one uses a variety of platforms.
-        </p>
-        <a
-          href="https://github.com/autumnlegere"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          github.com/autumnlegere
-        </a>
-        <p>
-          Finally, I have included a downloadable copy of my resume for your
-          viewing.
-        </p>
-        <a href={resume} download>
-          Downloadable Resume
-        </a>
-        <p>
-          Thank you for taking the time to view my portfolio and consider me for
-          contract or employment!
-        </p>
-      </section>
     </div>
   );
 }
