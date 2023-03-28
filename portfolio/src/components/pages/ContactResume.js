@@ -129,16 +129,14 @@ export default function ContactMe() {
         <Grid item xs={12} sm={8}>
           <Card sx={cardStyleInfo}>
             <CardContent>
-              <Typography variant="h7">
-              In addition to the completed projects that I have chosen to include in
-        this portfolio, I have many more projects that are either
-        works-in-progress or back-end only on my GitHub account which is linked
-        below. Most of these projects were completed as part of the bootcamp
-        curriculum and each one uses a variety of platforms. Please feel free to
-        reach out to me on any of the following platforms.
-        <br />I look forward to hearing from you!         Finally, I have included a downloadable copy of my resume for your
-        viewing.         Thank you for taking the time to view my portfolio and consider me for
-        contract or employment!
+              <Typography variant="h5" component='div' align='center'>
+              Please feel free to reach out to me on any of the platforms above or 
+              <br></br>
+              download a copy of my resume. Thank you for taking the time to
+              <br></br>
+              view my portfolio and consider me for contract or employment. 
+              <br></br>
+              I look forward to hearing from you!
               </Typography>
             </CardContent>
           </Card>
