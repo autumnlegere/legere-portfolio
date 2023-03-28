@@ -13,20 +13,3 @@ Welcome to my portfolio! This site is a representation of my knowledge base usin
 
 
 [Portfolio](https://autumnlegere.github.io/legere-portfolio/)
-
-
-
-
-## Screenshot
-
-
-![screenshot](../legere-portfolio/portfolio/src/images/ReadMeScreenshot.jpg)
-
-
-
-
-## Credits
-
-
-- React MUI for design<br>
-    - [React MUI](https://mui.com/)
