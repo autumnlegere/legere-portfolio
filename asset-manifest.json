@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/legere-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/legere-portfolio/static/js/main.abef2c27.js",
+    "main.js": "/legere-portfolio/static/js/main.f86d77a8.js",
     "static/media/familyprofile.jpg": "/legere-portfolio/static/media/familyprofile.a6f26a4ed16152fd08d4.jpg",
     "static/media/autumnprofile.jpg": "/legere-portfolio/static/media/autumnprofile.196151e403b281dbbff6.jpg",
     "static/media/resume.pdf": "/legere-portfolio/static/media/resume.4a741a6b313ca8688860.pdf",
     "index.html": "/legere-portfolio/index.html",
     "main.073c9b0a.css.map": "/legere-portfolio/static/css/main.073c9b0a.css.map",
-    "main.abef2c27.js.map": "/legere-portfolio/static/js/main.abef2c27.js.map"
+    "main.f86d77a8.js.map": "/legere-portfolio/static/js/main.f86d77a8.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.abef2c27.js"
+    "static/js/main.f86d77a8.js"
   ]
 }
